@@ -17,11 +17,7 @@ E1.pack()
 def Click():
     text=v_text.get() #ดึงข้อความที่userพิมพ์
     print('Nickname :', text)
-    if text.lower() =='Cream':
-        result = friend[text]
-        messagebox.showinfo('Result','ชื่อเล่น{} เป็นแฟนของCard'.format(text))
-        print('Name :', friend[text])
-    elif text.lower() in friend.keys():
+    if text.lower() in friend.keys():
         result = friend[text]
         messagebox.showinfo('Result','ชื่อเล่น{} เป็นชื่อของ{}'.format(text,result))
         print('Name :', friend[text])
